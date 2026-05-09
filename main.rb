@@ -7,6 +7,12 @@ $nome = "Miguel"
 $idade = "13"
 $cidade = "São Paulo"
 
+before do
+  @nome = $nome
+  @idade = $idade
+  @cidade = $cidade
+end
+
 get '/' do
   erb :index
 end
